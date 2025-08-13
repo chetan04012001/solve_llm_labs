@@ -4,7 +4,8 @@ import React from 'react'
 import { Key, Check, AlertCircle } from 'lucide-react'
 
 export function ApiKeyConfig() {
-    const [apiKey, setApiKey] = React.useState('')
+    const GEMINI_API_KEY = "AIzaSyDKjeFt6xO5Bt8ZGZwa-VCB-6HwSb_sFC8";
+    const [apiKey, setApiKey] = React.useState(GEMINI_API_KEY)
     const [isConfigured, setIsConfigured] = React.useState(false)
     const [isLoading, setIsLoading] = React.useState(false)
     const [error, setError] = React.useState<string | null>(null)
@@ -25,9 +26,9 @@ export function ApiKeyConfig() {
 
         try {
             // Validate API key format
-            if (!apiKey.startsWith('sk-') || apiKey.length < 40) {
-                throw new Error('Invalid API key format')
-            }
+            // if (!apiKey.startsWith('sk-') || apiKey.length < 40) {
+            //     throw new Error('Invalid API key format')
+            // }
 
             // Store API key in localStorage
             localStorage.setItem('openai_api_key', apiKey)
@@ -60,12 +61,12 @@ export function ApiKeyConfig() {
                         <Check className="w-5 h-5" />
                         <p>API key configured</p>
                     </div>
-                    <button
+                    {/* <button
                         onClick={handleReset}
                         className="text-sm text-gray-400 hover:text-white transition-colors"
                     >
                         Reset API key
-                    </button>
+                    </button> */}
                 </div>
             ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">

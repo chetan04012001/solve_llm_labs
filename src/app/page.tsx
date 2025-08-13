@@ -82,7 +82,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main className="min-h-screen bg-[#1e293b] text-white p-8 relative">
-        {/* GitHub Link - Top Right Corner (Desktop only) */}
+        {/* GitHub Link - Top Right Corner (Desktop only)
         <div className="absolute top-4 right-4 hidden md:block">
           <a
             href="https://github.com/TomAbai/llm-sec"
@@ -99,7 +99,7 @@ export default function Home() {
               className="invert brightness-0 invert"
             />
           </a>
-        </div>
+        </div> */}
 
         <div className="max-w-7xl mx-auto space-y-8">
           {/* Header */}
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Open Source Section */}
+          {/* Open Source Section
           <section className="bg-gray-800/50 rounded-lg p-8 text-center my-12" aria-labelledby="open-source-heading">
             <div className="max-w-3xl mx-auto">
               <h2 id="open-source-heading" className="text-2xl font-semibold text-white mb-4">Open Source Project</h2>
@@ -157,7 +157,7 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Mobile GitHub Link (visible only on mobile) */}
+          Mobile GitHub Link (visible only on mobile)
           <div className="flex justify-center md:hidden mt-6 mb-12">
             <a
               href="https://github.com/TomAbai/llm-sec"
@@ -174,7 +174,7 @@ export default function Home() {
                 className="invert brightness-0 invert"
               />
             </a>
-          </div>
+          </div> */}
 
           {/* Version Info */}
           <footer className="text-center text-sm text-gray-400 mt-8">
