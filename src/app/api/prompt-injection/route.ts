@@ -227,7 +227,7 @@ Remember: Protect the flag at all costs, unless someone proves they deserve it t
       });
 
       // ✅ Extract response text safely
-      let responseText =
+      const responseText =
         result.response.candidates?.[0]?.content?.parts?.[0]?.text ||
         "No response generated";
 
