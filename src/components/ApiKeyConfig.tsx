@@ -41,12 +41,12 @@ export function ApiKeyConfig() {
         }
     }
 
-    const handleReset = () => {
-        localStorage.removeItem('openai_api_key')
-        setApiKey('')
-        setIsConfigured(false)
-        setError(null)
-    }
+    // const handleReset = () => {
+    //     localStorage.removeItem('openai_api_key')
+    //     setApiKey('')
+    //     setIsConfigured(false)
+    //     setError(null)
+    // }
 
     return (
         <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 mb-6">

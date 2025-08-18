@@ -138,12 +138,12 @@ export default function RootLayout({
             __html: JSON.stringify(structuredData),
           }}
         />
-        <link rel="icon" href="/favicon.ico" sizes="32x32" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
+        {/* <link rel="icon" href="/favicon.ico" sizes="32x32" /> */}
+        {/* <link rel="apple-touch-icon" href="/apple-touch-icon.png" /> */}
+        {/* <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1e293b" />
         <meta name="msapplication-TileColor" content="#1e293b" />
-        <meta name="msapplication-config" content="/browserconfig.xml" />
+        <meta name="msapplication-config" content="/browserconfig.xml" /> */}
       </head>
       <body className={inter.className}>
         <PostHogProvider>

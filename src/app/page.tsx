@@ -1,5 +1,4 @@
 import { ThreatModelDiagram } from '@/components/ThreatModelDiagram'
-import Image from 'next/image'
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
