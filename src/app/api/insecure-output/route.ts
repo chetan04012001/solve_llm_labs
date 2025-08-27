@@ -152,7 +152,7 @@ export async function POST(request: Request) {
         ? 'You successfully extracted sensitive information beyond your access level!'
         : null
     })
-  } catch (error) {
+  } catch (error : unknown) {
     console.error('Error:', error)
     return NextResponse.json(
       { error: 'Failed to process prompt' },
